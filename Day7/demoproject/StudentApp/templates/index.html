@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} {% endblock %}   
+{% block stylesheet %} {% endblock %} 
+{% block content %} 
+
+        
+            <h1 class=p-3>List of all Students Information</h1>
+            <table class="table table-striped">
+                <tr class="table-dark">
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Date of Birth</th>
+                    <th>Gender</th>
+                </tr>
+                {% for stud in students %}
+                <tr>
+                    <td>{{stud.id}}</td>
+                    <td>{{stud.name}}</td>
+                    <td>{{stud.email}}</td>
+                    <td>{{stud.dob}}</td>
+                    <td>{{stud.gender}}</td>
+                </tr>
+                {% endfor %}
+            </table>
+           
+    
+        </div>
+        {% endblock %} 
+    
+
+    

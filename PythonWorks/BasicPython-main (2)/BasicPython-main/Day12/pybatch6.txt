@@ -1,0 +1,7 @@
+Good ByerldThis is our new text fileand this is another line.Why? Because we can.
+Hello World
+This is our new text file
+and this is another line.
+Why? Because we can.
+End of file in write mode.
+We Meet Again WorldWe Meet Again World 2

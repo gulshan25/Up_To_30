@@ -1,0 +1,50 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static 'img\icon.jpg' %}">
+    <title> {{data.title}} </title>
+    <link rel="stylesheet" href="{% static 'css\style.css' %}">
+    
+</head>
+<body>
+    
+    
+    
+
+     <form>
+         <div class="container">
+            <h1>This is my Website</h1>
+             <img src="{% static 'img\profile1.jpg' %}" alt="no image">
+
+             <table>
+                 <tr class="darkhead">
+                     <td>Id</td>
+                     <td>Name</td>
+                     <td>Email Address</td>
+                     <td>Phone Number</td>
+                 </tr>
+                 <!--variable express-->
+                 {%for std in students %}             
+                 <tr>
+                    <td>{{std.id}}</td>     <!--variable tag-->
+                    <td>{{std.name}}</td>
+                    <td>{{std.email}}</td>
+                    <td>{{std.phone}}</td>
+                </tr>
+                 {% endfor %}
+                 <!--variable express-->
+             </table>
+             <p>
+
+                This programe developed by {{ data.author }}    
+             </p>
+         </div>
+        
+     </form>
+</body>
+</html>

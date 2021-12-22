@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} SMS {% endblock %}
+
+{% block content %} 
+
+        
+            <h1 class ="text-dark m-3">Students Information</h1>
+            <img class="rounded float-start rounded-circle m-2" src="{% static 'img\profile1.jpg' %}" alt="No Image" width="200px">
+            <table class="table table-striped">
+                <tr class="table-dark">
+                    <td>Id</td>
+                    <td>Name</td>
+                    <td>Email Address</td>
+                    <td>Phone Number</td>
+                </tr>
+                {% for std in students %}
+                <tr>
+                    <td>{{std.id}}</td>
+                    <td>{{std.name}}</td>
+                    <td>{{std.email}}</td>
+                    <td>{{std.phone}}</td>
+                </tr>
+                {% endfor %}
+            </table>
+            <p>
+                This program developed by {{ data.author }}
+            </p>
+    
+        </div>
+        
+        {% endblock %}

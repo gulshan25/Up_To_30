@@ -1,0 +1,55 @@
+.nashid{
+    background-color: rgb(238, 225, 225);
+    color: rgb(22, 20, 19);
+    border: 10px dotted teal;
+}
+
+.container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;            
+
+}
+
+@media(min-width: 768px){
+    .container{
+        max-width: 720px;
+        
+    }
+}
+
+@media(min-width: 992px){
+    .container{
+        max-width: 960px;
+        
+    }
+}
+
+@media(min-width: 1200px){
+    .container{
+        max-width: 1140px;
+        
+    }
+}
+
+@media(min-width: 1440px){
+    .container{
+        max-width: 1300px;
+        
+    }
+}
+
+@media(min-width: 1900px){
+    .container{
+        max-width: 1800px;
+        
+    }
+}
+
+.darkhead{
+    background-color: hsl(0, 100%, 44%);
+    color: white;
+
+}
